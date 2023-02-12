@@ -123,7 +123,7 @@ DESCRIPTION
 
 <pre>
 Dig allows us to manually query recursive DNS servers of our choice for information about domains:
-dig <domain> @<dns-server-ip>
+dig < domain > @< dns-server-ip >
 </pre><br>
 
 ----------------------------------
