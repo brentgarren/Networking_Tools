@@ -35,4 +35,38 @@ Options:<br>
     <br>
     
     </pre>
+	
+	
     ---------------------------------------------
+	
+<pre>
+The logical follow-up to the ping command is 'traceroute'. Traceroute can be used to map the path your request takes as it heads to the target machine.  
+  
+The internet is made up of many, many different servers and end-points, all networked up to each other. This means that, in order to get to the content you actually want, you first need to go through a bunch of other servers. Traceroute allows you to see each of these connections -- it allows you to see every intermediate step between your computer and the resource that you requested. The basic syntax for traceroute on Linux is this: `traceroute <destination>`
+
+By default, the Windows traceroute utility (`tracert`) operates using the same ICMP protocol that ping utilises, and the Unix equivalent operates over UDP. This can be altered with switches in both instances.
+
+	NAME
+       traceroute - print the route packets trace to network host
+
+SYNOPSIS
+       traceroute [-46dFITUnreAV] [-f first_ttl] [-g gate,...]
+               [-i device] [-m max_ttl] [-p port] [-s src_addr]
+               [-q nqueries] [-N squeries] [-t tos]
+               [-l flow_label] [-w waittimes] [-z sendwait] [-UL] [-D]
+               [-P proto] [--sport=port] [-M method] [-O mod_options]
+               [--mtu] [--back]
+               host [packet_len]
+       traceroute6  [options]
+       tcptraceroute  [options]
+       lft  [options]
+
+DESCRIPTION
+       traceroute  tracks the route packets taken from an IP network on their way to a given
+       host. It utilizes the IP protocol's time to live (TTL) field and attempts  to  elicit
+       an ICMP TIME_EXCEEDED response from each gateway along the path to the host.
+
+       traceroute6 is equivalent to traceroute -6
+
+       tcptraceroute is equivalent to traceroute -T
+</pre>
