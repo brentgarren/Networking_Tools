@@ -34,12 +34,12 @@ Options:<br>
     -6             Force using IPv6.<br>
     <br>
     
-    </pre>
+    </pre><br>
 	
 	
     ---------------------------------------------
 	
-<pre>
+<br><pre>
 The logical follow-up to the ping command is 'traceroute'. Traceroute can be used to map the path your request takes as it heads to the target machine.  
   
 The internet is made up of many, many different servers and end-points, all networked up to each other. This means that, in order to get to the content you actually want, you first need to go through a bunch of other servers. Traceroute allows you to see each of these connections -- it allows you to see every intermediate step between your computer and the resource that you requested. The basic syntax for traceroute on Linux is this: `traceroute <destination>`
