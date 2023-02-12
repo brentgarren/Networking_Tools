@@ -118,3 +118,12 @@ DESCRIPTION
        for NIC handles or whois.arin.net for IPv4 addresses and network names.
        
  </pre><br>
+
+----------------------------------
+
+<pre>
+Dig allows us to manually query recursive DNS servers of our choice for information about domains:
+dig <domain> @<dns-server-ip>
+</pre><br>
+
+----------------------------------
